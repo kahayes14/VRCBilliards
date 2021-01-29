@@ -1,12 +1,11 @@
 # VRChat 8 Ball source mirror
-Original world: https://vrchat.com/home/world/wrld_d02883d1-7d79-4d51-87e2-b318ca4c2b37
 
 ![](https://i.imgur.com/3cHrbf1.jpg)
 
 ## For World Creators
 Follow the Collisions layers steps first before importing package!
-
-This project can be downloaded from [The releases page](https://github.com/Terri00/vrc8ball/releases)
+This project can be downloaded from [The releases page](https://github.com/Xiexe/VRCBilliards/releases)
+or by downloading the source, and extracting the zip into your project.
 
 ### Dependencies / Setup
 - Install VRCSDK 3
@@ -14,9 +13,7 @@ This project can be downloaded from [The releases page](https://github.com/Terri
 - Import the package
 
 #### Collision layers
-There are some objects that need to be set to only collide on a seperate layer.
-
-Check the scene `ht8b_public` for a full setup example
+There are some objects that need to be set to only collide on a seperate layer. This is very important!
 
 Recommended steps:
 - Edit > Project Settings > Tags and Layers
@@ -39,5 +36,4 @@ On the top of the prefab there is one:
 And in the scene `__MAIN__` also has one of these scripts
 
 ### Caveats
-- HT8B once again has a position requirement, this time its that the Y position in the scene of this prefab should equal 0.0 
 - This project is currently not designed / tested with more than one instance of a table in a world and is currently unsupported
