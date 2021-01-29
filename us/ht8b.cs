@@ -1671,8 +1671,9 @@ void _phy_ball_step( int id )
 				// Prevent sound spam if it happens
 				if( ball_V[ id ].sqrMagnitude > 0 && ball_V[ i ].sqrMagnitude > 0 )
 				{
-					//aud_main.PlayOneShot( snd_Hits[ 0 ], 1.0f );
-					AudioSource.PlayClipAtPoint( snd_Hits[ 0 ], ball_CO[ id ], 1.0f );
+					int clip = UnityEngine.Random.Range(0, snd_Hits.Length - 1);
+					float vol = Mathf.Clamp01((ball_V[id].magnitude + ball_V[i].magnitude) * reflection.magnitude);
+					AudioSource.PlayClipAtPoint(snd_Hits[clip], balls_render[id].transform.position, vol);
 				}
 
 				// First hit detected
