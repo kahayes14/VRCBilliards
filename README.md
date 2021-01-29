@@ -10,7 +10,7 @@ or by downloading the source, and extracting the zip into your project.
 ### Dependencies / Setup
 - Install VRCSDK 3
 - Install [Udon Sharp](https://github.com/MerlinVR/UdonSharp)
-- Import the package
+- Import the package OR unzip the Source Code into your project into it's own folder.
 
 #### Collision layers
 There are some objects that need to be set to only collide on a seperate layer. This is very important!
